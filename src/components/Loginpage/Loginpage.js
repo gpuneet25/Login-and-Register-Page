@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Loginpage.css'
 import { Link } from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
 
 const Loginpage = (props) => {
 
@@ -17,6 +18,8 @@ const Loginpage = (props) => {
     }
     
     return (
+        <>
+        <Navbar />
         <div className="card">
             <div className="head" > 
                     Welcome <br />
@@ -34,6 +37,7 @@ const Loginpage = (props) => {
                 <button> Sign in</button>
             </div>
         </div>
+        </>
     )
 }
 
