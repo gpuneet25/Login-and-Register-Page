@@ -1,0 +1,88 @@
+.card2{
+    align-items: center;
+    height: 60vh;
+    width: 40vw;
+    background-color:whitesmoke;
+    margin-top: 10vh;
+    margin-left: 30vw;
+}
+
+.calcuator{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    margin-left: 10vw;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.inputvalue{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.inputvalue-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15vw;
+    margin-left: 20px;
+}
+
+#val2{
+    margin-top: 10px;
+}
+
+.inputvalue-right{
+    margin-left: 40px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#result{
+    height: 50px;
+    width: 15vw;
+}
+
+.operations{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculate-increment{
+    background-color: green;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.calculate-decrement{
+    background-color: red;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.calculate-multiple{
+    background-color:blue;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.calculate-divident{
+    background-color: indigo;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 5px;
+    cursor: pointer;
+}

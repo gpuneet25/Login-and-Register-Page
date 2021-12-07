@@ -1,0 +1,47 @@
+.body{
+    background-image: linear-gradient(to left, blue, violet);
+    height: 100vh;
+    margin: 0px;
+}
+
+.card1{
+    height: 80vh;
+    width: 40vw;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vw;
+    box-shadow: 2px 5px 4px #888888;
+    border-radius: 5px;
+}
+
+.head1{
+    background-color: black;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.section{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.registern{
+    color: violet;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
