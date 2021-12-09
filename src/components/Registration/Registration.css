@@ -2,6 +2,9 @@
     background-image: linear-gradient(to left, blue, violet);
     height: 100vh;
     margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card1{
@@ -10,7 +13,6 @@
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    margin-left: 30vw;
     box-shadow: 2px 5px 4px #888888;
     border-radius: 5px;
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './Calculate.css'
+import Navbar from '../Navbar/Navbar'
 
 const Calculate = () => {
     const [value1, setValue1] = useState()
@@ -32,6 +33,8 @@ const Calculate = () => {
     
 
     return (
+        <>
+        <Navbar />
         <div className="card2">
                 <div className="calcuator">
                     Calculator
@@ -55,6 +58,7 @@ const Calculate = () => {
                     <div onClick={divide} className="calculate-divident">/</div>
                 </div>
         </div>
+        </>
     )
 
 }
