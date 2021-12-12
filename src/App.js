@@ -1,21 +1,21 @@
-import logo from './logo.svg';
-import Header from './components/Header';
-import Calendars from './components/Calendars';
-import Loginpage from "./components/Loginpage/Loginpage";
-import Calculate from './components/Calculate/Calculate';
-import Navbar from './components/Navbar/Navbar';
-import Registration from './components/Registration/Registration';
 import { BrowserRouter as Router, Route} from "react-router-dom";
-
+import Heading from './components/Heading/Heading';
+import Home from './components/Home/Home';
+import Signin from './components/Signin/Signin'
+import Signup from './components/Signup/Signup'
+import Signinpage from './components/Signinpage/Signinpage';
+import Registrations from './components/Registrations/Registrations';
 
 function App() {
   return (
     <>
     <Router>
-     <Route exact path="/" component={Navbar} />
-     <Route exact path="/home" component={Calculate} />
-     <Route exact path="/signin" component={Loginpage} />
-     <Route exact path="/registration" component={Registration} />
+     <Route exact path="/" component={Heading} />
+     <Route exact path="/home" component={Home} />
+     <Route exact path="/signin" component={Signin} />
+     <Route exact path="/signedin" component={Signinpage} />
+     <Route exact path="/registration" component={Signup} />
+     <Route exact path="/signedup" component={Registrations} />
     </Router>
     </>
   );

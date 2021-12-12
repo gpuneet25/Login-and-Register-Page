@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Registration.css'
 import Navbar from '../Navbar/Navbar'
+import { TextField } from '@mui/material'
 
 const Registration = () => {
 
@@ -15,53 +16,33 @@ const Registration = () => {
             </div>
 
             <div className="section">
-                <div className="name">
-                    <div>Name</div>
-                    <input type="text" placeholder="First Name" />
-                    <input type="text" placeholder="Last Name" />
-                </div>
-
-                <div className="name">
-                    <div> Date of Birth</div>
-                    <input type="number" placeholder="DD/MM/YYYY" />
-                </div>
-
-                <div className="name">
-                    <div> Address</div>
-                    <input type="text" placeholder="Address" />
-                </div>
-
-                <div className="name">
-                    <div> Pin Code </div>
-                    <input type="number" placeholder="Pin Code" />
-                </div>
-
-                <div className="name">
-                    <div> Email </div>
-                    <input type="text" placeholder="Enter Email" />
-                </div>
-
-                <div className="name">
-                    <div> Contact No </div>
-                    <input type="number" placeholder="Countery Code" />
-                    <input type="number" placeholder="10 digit mobile number" />
-                </div>
-
-                <div className="name">
-                    <div> Password </div>
-                    <input type="text" placeholder="Password" />
-                </div>
-
-                <div className="name">
-                    <div>  Re-enter Password </div>
-                    <input type="text" placeholder="Re-enter Password" />
-                </div>
+                {/* <ul className="section-left">
+                    <li>Name</li>
+                    <li>Date of Birth</li>
+                    <li>Address</li>
+                    <li >Pin Code</li>
+                    <li>Email</li>
+                    <li > Contact No</li>
+                    <li>Password</li>
+                    <li >Re-enter Password</li>
+                </ul> */}
+                    <div className='flex'>
+                    <TextField id="outlined-basic" label="First Name" variant="outlined" />
+                    <TextField id="outlined-basic" label="Last Name" variant="outlined" />
+                    </div>
+                    <TextField id="outlined-basic" className="input-text"  label="DOB" variant="outlined" />
+                    <TextField id="outlined-basic"  className="input-text"  label="Address" variant="outlined" />
+                    <TextField id="outlined-basic"  className="input-text"  label="Pin Code" variant="outlined" />
+                    <TextField id="outlined-basic"  className="input-text"  label="Email" variant="outlined" />
+                    <TextField id="outlined-basic"  className="input-text"  label="Contact No" variant="outlined" />
+                    <TextField id="outlined-basic"  className="input-text"  label="Password" variant="outlined" />
+                <TextField id="outlined-basic"  className="input-text"  label="Confirm Password" variant="outlined" />
+            </div>
 
                 <div className="footer">
                     <button className="registern">Register Now</button>
                 </div>
 
-            </div>
 
         </div>
     </div>

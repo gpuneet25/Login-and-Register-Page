@@ -1,0 +1,37 @@
+#img2{
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card3{
+    height: 70vh;
+    width: 40vw;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.head3{
+    height: 40vh;
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.footer3{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

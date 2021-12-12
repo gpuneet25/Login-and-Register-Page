@@ -29,16 +29,11 @@
 }
 
 .section{
-    margin-top: 10px;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.name{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    justify-content: space-evenly;
-}
 
 .registern{
     color: violet;
@@ -46,4 +41,16 @@
     border-radius: 5px;
     padding: 10px;
     font-size: 1.5rem;
+}
+
+
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.input-text{
+    margin: 5px !important;
 }

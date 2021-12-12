@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <div>
-            <Link to="/home">Click here for home page</Link>
+            <img src="https://wallpaperaccess.com/full/3214373.jpg"/>
         </div>
     )
 }

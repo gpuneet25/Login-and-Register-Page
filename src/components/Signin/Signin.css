@@ -1,0 +1,63 @@
+.signpage{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.signpage-card{
+    background-color: whitesmoke;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.signpage-card-left{
+    background-image: url("https://i.pinimg.com/originals/25/42/34/254234eecf48094f093fc9bd6ef20b2a.png");
+    min-height: 80vh;
+    width: 40vw;
+    background-repeat: no-repeat;
+}
+
+.signpage-card-right{
+    display: flex;
+    align-items: center;
+}
+
+.signpage-card-right-box{
+    background-color: white;
+    height: 50vh;
+    width: 30vw;
+    margin-left: 5vw;
+}
+
+.signpage-card-right-box-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.signpage-card-right-box-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email1{
+    margin-top: 3vh;
+    width: 20vw;
+}
+
+.password1{
+    margin-top: 3vh;
+    width: 20vw;
+}
+
+.btn1{
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
