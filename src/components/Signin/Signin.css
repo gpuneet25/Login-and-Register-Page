@@ -13,11 +13,17 @@
 }
 
 .signpage-card-left{
-    background-image: url("https://i.pinimg.com/originals/25/42/34/254234eecf48094f093fc9bd6ef20b2a.png");
-    min-height: 80vh;
-    width: 40vw;
-    background-repeat: no-repeat;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
 }
+
+#img3{
+    height: 50vh;
+    width: 30vw;
+    margin: auto;
+}
+
 
 .signpage-card-right{
     display: flex;
@@ -28,7 +34,7 @@
     background-color: white;
     height: 50vh;
     width: 30vw;
-    margin-left: 5vw;
+    margin-left: 10vw;
 }
 
 .signpage-card-right-box-text{

@@ -1,0 +1,86 @@
+.main-container-homepage {
+
+    &-section {
+        height: 80vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://w0.peakpx.com/wallpaper/203/527/HD-wallpaper-aircraft-sunset.jpg");
+        opacity: 70%;
+
+        &-content {
+            color: white;
+            border-radius: 10px;
+            font-size: 3rem;
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-book {
+            color: black;
+            display: flex;
+            width: 80vw;
+            height: 20vh;
+            margin-left: 10vw;
+            margin-top: 80px;
+            color: white;
+            &-inner {
+                &-title{
+                    display: flex;
+                    flex-direction: row;
+                }
+                &-card {
+                    height: 10vh;
+                    width: 80vw;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border: 0px;
+                    border-radius: 5px;
+                    opacity: 75%;
+                    &-box {
+                        display: flex;
+                        align-items: center;
+                        
+                        .inputbox {
+                            width: 10vw;
+                            margin: 0 10px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.searchbtn {
+    padding-left: 20px;
+}
+
+#swap {
+    color: black;
+    margin: 0px !important;
+    font-size: 2rem;
+}
+
+#flighticon {
+    font-size: 5rem;
+    color: black;
+}
+
+@media screen and (min-width: 421px) and (max-width: 12500px) {
+    .main-container-homepage-section {   
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://w0.peakpx.com/wallpaper/203/527/HD-wallpaper-aircraft-sunset.jpg");
+        height: auto;
+        width: auto;
+        opacity: 70%;
+
+    }
+}

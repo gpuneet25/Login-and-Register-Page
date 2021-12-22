@@ -1,0 +1,42 @@
+.main-bus-section{    
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Jz3ae58dELgrSjgpOYwjjTIe8Hkjwo8heA&usqp=CAU"); */
+    /* background-image: url("https://wallpaperaccess.com/full/1628626.jpg"); */
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://cdn.wallpapersafari.com/87/83/aINmBZ.jpg");
+}
+
+.main-bus-section-content{
+    color: white;
+    font-size: 3rem;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-bus-section-book{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.main-bus-section-inner-card{
+    height: 10vh;
+    width: 50vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searchbtnb{
+    padding-left: 20px;
+}
+
+#busicon{
+    font-size: 4rem;
+    color: black;
+}

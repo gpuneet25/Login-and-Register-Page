@@ -13,10 +13,9 @@
 }
 
 .signuppage-card-left{
-    background-image: url("https://i.pinimg.com/originals/25/42/34/254234eecf48094f093fc9bd6ef20b2a.png");
-    min-height: 80vh;
     width: 35vw;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
 .signuppage-card-right{

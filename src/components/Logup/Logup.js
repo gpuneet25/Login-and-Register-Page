@@ -1,12 +1,25 @@
-import React, {useState, useEffect} from 'react'
-import './Signup.css'
+import * as React from 'react';
+import {useState, useEffect} from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { TextField } from '@mui/material'
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
 
+export default function FormDialog() {
+  const [open, setOpen] = React.useState(false);
 
-const Signup = (props) => {
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
     const [email, setEmail] = useState()
     const history = useHistory()
@@ -20,7 +33,6 @@ const Signup = (props) => {
         setFirstName(e.target.value)
 
     }
-    localStorage.setItem("firstName", firstName)
 
     const handleLastNameChange =(e) => {
         setLastName(e.target.value)
@@ -41,7 +53,7 @@ const Signup = (props) => {
         setConfrimPassword(e.target.value)
 
     }
-
+    
     const handleEmailChange =(e) => {
         setEmail(e.target.value)
 
@@ -73,39 +85,38 @@ const Signup = (props) => {
             return console.log("Please provide correct email")
         }
 
-        history.push("/signedup")
+        setOpen(false)
+        history.push("/")
+
+        let register = {
+          firstName,
+          email,
+          password,
+          contact,
+      }
+      localStorage.setItem("userdetails", JSON.stringify(register))
     }
-    
-    return (
-        <>
-        <div className="signuppage">
-            <div className="signuppage-card">
-                <div className="signuppage-card-left">
-                     <h5><Link to="/"> Go Back! </Link></h5>
-                    <img src="https://i.pinimg.com/originals/25/42/34/254234eecf48094f093fc9bd6ef20b2a.png" id="img3" />
-                </div>
-                <div className="signuppage-card-right">
-                        <div className="signuppage-card-right-box">
-                            <div className="signuppage-card-right-box-text">
-                            <div className="signuppage-card-right-box-text-header">
-                                   <h2> Register Here! </h2>
-                            </div>
-                            <div className="signuppage-card-right-box-text-element">
-                            <Stack spacing={2} direction="row">
-                                <h4>Already User?</h4>
-                                <Link to="/Signin" ><Button variant="text" >Login here</Button> </Link>
-                            </Stack>
-                            </div>
-                            </div>
-                            
-                            <div className="signuppage-card-right-box-input">
+
+
+  return (
+    <div>
+      <Button variant="standard" onClick={handleClickOpen}>
+        SIGNUP
+      </Button>
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>Register Here!</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            To book your tickets, please register yourself here.
+          </DialogContentText>
+                        <div className="signuppage-card-right-box-input">
                                 <div className="signuppage-card-right-box-input-data">
                                     <div className='flex'>
                                         <TextField id="outlined-basic" onChange={handleFirstNameChange} className="input-text" label="First Name" variant="outlined" />
                                         <TextField id="outlined-basic"  onChange={handleLastNameChange} className="input-text" label="Last Name" variant="outlined" />
                                     </div>
                                     <div className="signuppage-card-right-box-input-data2">
-                                        <TextField required type="number" id="outlined-basic" onChange={handleDobChange} className="input-text"  label="DOB" variant="outlined" />
+                                        <TextField required type="date" id="outlined-basic" onChange={handleDobChange} className="input-text"  label="DOB" variant="outlined" />
                                         <TextField id="outlined-basic" onChange={handleEmailChange} className="input-text" type="email"  label="Email" variant="outlined" />
                                         <TextField type="number" id="outlined-basic" onChange={handleContactChange} className="input-text"  label="Contact No" variant="outlined" />
                                         <TextField type="password" id="outlined-basic" onChange={handlePasswordChange} className="input-text"  label="Password" variant="outlined" />
@@ -113,17 +124,15 @@ const Signup = (props) => {
                                     </div>                                
                                 </div>
                             </div>
-                            <div className="btn1"> 
+        </DialogContent>
+                <DialogActions>
+                <Button onClick={handleClose}>Go Back!</Button>
+                {/* <Button onClick={handleClose}>Submit</Button> */}
                             <Stack spacing={2} direction="row">
                             <Button onClick={handleClick} variant="contained">Register</Button>
                             </Stack>
-                            </div>
-                        </div>
-                </div>
-            </div>   
-        </div>
-        </>
-    )
+                </DialogActions>
+      </Dialog>
+    </div>
+  );
 }
-
-export default Signup

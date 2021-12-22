@@ -1,45 +1,69 @@
-body{
-    margin: 3px;
-}
-
-.main-container-header{
-    background-color: whitesmoke;
-    display:flex;
+.main-container-homepage-header{
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    background-color: whitesmoke;
     height: 8vh;
     width: 100%;
 }
 
-.main-container-header-left{
-    width: 50%;
-    margin: 10px;
+.main-container-homepage-header-left{
     display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 20%;
     align-items: center;
 }
 
-.main-container-header-right{
-    width: 50%;
+#travel{
+    height: 5vh;
+    margin: 5px;
+}
+
+#btntravel{
+    margin-left: 10px;
+    height: 5vh;
+}
+
+.main-container-homepage-header-center{
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
+    flex-direction: row;
     align-items: center;
+    width: 60%;
+    justify-content: center;
 }
 
-.sign{
-    background-color: whitesmoke;
-    box-shadow: 2px 3px 4px 2px #888888;
+.flight{
+    padding: 10px;
+    font-size: 1.5rem;
 }
 
-.create{
-    background-color: whitesmoke;
-    box-shadow: 2px 3px 4px 2px #888888;
+.bus{
+    padding: 10px;
+    font-size: 1.5rem;
 }
 
-.textdecoration{
+.train{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.main-container-homepage-header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+    width: 20%;
+    justify-content: center;
+}
+
+.log{
+    padding: 5px;
+    font-size: 1.5rem;
     text-decoration: none;
-    color: black;
 }
 
-.textdecoration:hover{
-    color:red;
+text{
+    text-decoration: none;
 }
+
